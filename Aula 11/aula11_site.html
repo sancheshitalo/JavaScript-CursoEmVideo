@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            background-color: rgb(0, 132, 255);
+            color: white;
+            font: normal 14pt arial;
+            margin-left: 30px;
+        }
+
+        input {
+            width: 200px;
+            height: 25px;
+            font: normal 15pt arial;
+        }
+
+        input#id-btn1 {
+            width: 90px;
+            height: 30px;
+            font: bold 13pt arial;
+            border-radius: 25px ;
+            border: none;
+            margin-left: 20px;
+            color: rgb(69, 63, 109);
+            
+        }
+
+        input#id-btn1:hover {
+            background-color: rgb(69, 63, 109);
+            color: white;
+        }
+
+        div#res {
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="vel" id="id-vel"> Km/h
+    <input type="button" value="Verificar" id="id-btn1" onclick="calcular()">
+    <div id="res">Resultado:</div>
+    <script>
+
+        function calcular() {
+            var velocidade = document.querySelector('input#id-vel')
+            var res = document.querySelector('div#res')
+            var vel = Number(velocidade.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h!</strong></p>`
+            if (vel > 60) {
+                res.innerHTML += `<p>Você ultrapassou o limite de velocidade. <strong>MULTADO!</strong></p>`
+            } else {
+                res.innerHTML += `<p>Parabéns! Dirigir dentro do limite de velocidade é cuidar de vidas!</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>

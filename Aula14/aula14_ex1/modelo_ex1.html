@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 13 - Exercício 01</title>
+    <title>Aula 14 - Exercício 01</title>
     <link rel="stylesheet" href="modelo_ex1.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Contador de passos</h1>
+        <h5>O contador de passos tem como objetivo<br><strong>mostrar o caminho percorrido</strong> até o objetivo.</h5>
     </header>
     <section>
-        <div>
-            Testando
+        <div id="dados">
+            <p> Início: <input type="number" name="inicio" id="id-inicio"></p>
+            <p> Fim: <input type="number" name="fim" id="id-fim"></p>
+            <p> Passo: <input type="number" name="passo" id="id-passo"></p>
+            <p><input type="button" value="Contar" id="botao" onclick="contar()"></p>
         </div>
-        <div>
-
+        <div id="res">
+            
         </div>
     </section>
     <footer>

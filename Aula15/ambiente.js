@@ -1,6 +1,18 @@
-let num = [5, 8, 2, 9, 3]
-num.push(7)
+/*
+let valores = [8, 4, 1, 2, 7]
+for(let pos=0; pos < valores.length; pos++) {
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+*/
 
-
-console.log(`O array tem ${num.length} posições.`)
-
+/*
+let valores = [8, 4, 1, 2, 7]
+valores.sort()
+for(let pos in valores) {
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+*/
+let num = [3, 7, 2, 1, 4]
+num.sort()
+let pos = num.indexOf(2)
+    console.log(`O valor que você procura está na posição ${pos}`)

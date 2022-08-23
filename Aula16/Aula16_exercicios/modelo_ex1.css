@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(0, 102, 255);
+    color: white;
+    font: normal 14pt arial;
+    margin: 30px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+div#div-addnum {
+    text-align: left;
+}
+
+select#id-sel-addnum {
+    width: 444px;
+    margin-top: 13px;
+    margin-left: 30px;    
+}
+
+input#id-botao-fim {
+    margin-top: 13px;
+    margin-left: 29px;
+    width: 444px;
+    height: 26px;
+    font: bold 12pt arial;
+}
+
+input#id-botao-fim:hover {
+    font: bold 11pt arial;
+    background-color: rgb(4, 10, 43);
+    color: white;
+    border: none;
+}
+
+input {
+    font: normal 12pt arial;
+}
+
+input#id-botao-addnum {
+    font: bold 11pt arial;
+}
+
+input#id-botao-addnum:hover {
+    font: bold 11pt arial;
+    background-color: rgb(4, 10, 43);
+    color: white;
+}
+
+section {
+    background: rgb(252, 252, 252);
+    color: rgb(23, 22, 53);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.288);
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 11pt;
+}
